@@ -13,7 +13,7 @@ app.post('/signup', async(req, res) => {
         const result = await user.save()
         res.send(result);
     }catch(error){
-        console.log("error in signin ")
+        console.log("error in signin ",error)
     }
 })
 
